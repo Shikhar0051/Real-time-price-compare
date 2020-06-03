@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title> passed data</title>
+		
+	</head>
+	
+	<body>
+		<h1>{{p}}</h1>
+		<br>
+		<div class="container">
+			
+				<div class="flip_list">
+					<table>
+						<tr>
+							<th> flipkart </th>
+						</tr>
+						{% for item in li %}
+						<tr>
+							<td><a href="{{item[0]}}">{{item[1]}}</a></td><td>{{item[2]}}</td>
+						</tr>
+						{% endfor %}
+					</table>
+				</div>
+				<div class="amaz_list float-right">
+					<table>
+						<tr>
+							<th> amazon </th>
+						</tr>
+						{% for item in li_amaz %}
+						<tr>
+							<td><a href="{{item[0]}}">{{item[1]}}</a></td><td>{{item[2]}}</td>
+						</tr>
+						{% endfor %}
+					</table>
+				</div>
+				
+		</div>
+		
+		
+		
+	</body>
+</html>
