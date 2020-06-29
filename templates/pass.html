@@ -2,22 +2,56 @@
 <html>
 	<head>
 		<title> passed data</title>
-		
+		<style>
+			.flex-container {
+			  display: flex;
+			  background-color: DodgerBlue;
+			}
+
+			.flex-container > div {
+			  background-color: #f1f1f1;
+			  margin: 10px;
+			  padding: 20px;
+			  width: 45%;
+			  font-size: 20px;
+			}
+			
+			td{
+				padding: 10px;
+				border: 2px solid #8ebf42;
+				text-align: center;
+			}
+			
+			#image{
+				height: 10%;
+				width: 50%;
+			
+			}
+			
+			#image1{
+				height: 100%;
+				width: 100%
+			}
+		</style>
 	</head>
 	
 	<body>
-		<h1>{{p}}</h1>
+		<h1><center>{{p}}</center></h1>
 		<br>
-		<div class="container">
+		<div class="flex-container">
 			
 				<div class="flip_list">
 					<table>
+						
 						<tr>
-							<th> flipkart </th>
+							<th colspan="3"><center><img id="image" src="../static/images/flipkart.jpg"></center></th>
 						</tr>
+						
 						{% for item in li %}
 						<tr>
-							<td><a href="{{item[0]}}">{{item[1]}}</a></td><td>{{item[2]}}</td>
+							<td><img id="image1" src="{{item[1]}}">
+							<td><a href="{{item[0]}}">{{item[2]}}</a></td>
+							<td>{{item[3]}}</td>
 						</tr>
 						{% endfor %}
 					</table>
@@ -25,11 +59,13 @@
 				<div class="amaz_list float-right">
 					<table>
 						<tr>
-							<th> amazon </th>
+							<th colspan="3"><center><img id="image" src="../static/images/amazon.jpg"></center></th>
 						</tr>
 						{% for item in li_amaz %}
 						<tr>
-							<td><a href="{{item[0]}}">{{item[1]}}</a></td><td>{{item[2]}}</td>
+							<td><img id="image1" src="{{item[1]}}">
+							<td><a href="{{item[0]}}">{{item[2]}}</a></td>
+							<td>{{item[3]}}</td>
 						</tr>
 						{% endfor %}
 					</table>
