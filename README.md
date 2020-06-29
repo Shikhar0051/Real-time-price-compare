@@ -9,7 +9,7 @@ This project provides the Real time analysis of products on flipkart and amazon 
 <p> 3. bs4 </p>
 <p> 4. Selenium </p>
 
-Newly added Selenium needs ChromeDrivers to be downloaded and the path to be setup. Refer to the<a href="https://youtu.be/dz59GsdvUF8"> youtube link </a>.
+Newly added Selenium needs ChromeDrivers to be downloaded and the path to be setup. Refer to the<a href="https://youtu.be/dz59GsdvUF8"> youtube link </a>. The version of ChromeDrivers used in the project is uploaded.
 
 <h2> Running Locally on system </h2>
 <div class="highlight highlight-source-shell"><pre>git clone https://github.com/Shikhar0051/Real-time-price-compare.git </pre></div>
