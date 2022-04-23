@@ -1,4 +1,5 @@
 # Real-time-price-compare
+**NOTE- Please update the Class tag and ID tag.
 
 Most sites that compare the price of products on different e-commerce websites tend to store data in database/json files which makes a price comparison site pretty heavy.
 <br>
